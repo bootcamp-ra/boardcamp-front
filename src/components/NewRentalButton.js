@@ -6,7 +6,7 @@ export default function NewRentalButton () {
   const history = useHistory();
 
   return (
-    <Button onClick={() => history.push('/lalala')} title="Alugar Jogo">
+    <Button onClick={() => history.push('/rentals/new')} title="Alugar Jogo">
       <RiHandHeartLine />
     </Button>
   )
