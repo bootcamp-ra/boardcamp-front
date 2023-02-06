@@ -1,11 +1,11 @@
-import { useHistory } from 'react-router-dom';
-import styled from 'styled-components';
-import { FaHistory, FaChessBoard, FaGamepad } from 'react-icons/fa';
-import { BsFillPeopleFill } from 'react-icons/bs';
+import { useHistory } from "react-router-dom";
+import styled from "styled-components";
+import { FaHistory, FaChessBoard, FaGamepad } from "react-icons/fa";
+import { BsFillPeopleFill } from "react-icons/bs";
 
-import logo from '../assets/images/logo.png';
+import logo from "../assets/images/logo.png";
 
-export default function Sidebar () {
+export default function Sidebar() {
   const history = useHistory();
 
   return (
@@ -14,24 +14,19 @@ export default function Sidebar () {
         <img src={logo} alt="BoardCamp Logo" />
       </Logo>
 
-      <MenuItem onClick={() => history.push('/rentals')}>
+      <MenuItem onClick={() => history.push("/rentals")}>
         <FaHistory />
         Aluguéis
       </MenuItem>
 
-      <MenuItem onClick={() => history.push('/customers')}>
-        <BsFillPeopleFill  />
+      <MenuItem onClick={() => history.push("/customers")}>
+        <BsFillPeopleFill />
         Clientes
       </MenuItem>
 
-      <MenuItem onClick={() => history.push('/games')}>
+      <MenuItem onClick={() => history.push("/games")}>
         <FaChessBoard />
         Jogos
-      </MenuItem>
-
-      <MenuItem onClick={() => history.push('/categories')}>
-        <FaGamepad />
-        Categorias
       </MenuItem>
     </Container>
   );
@@ -44,7 +39,7 @@ const Container = styled.aside`
 
   width: var(--sidebar-width);
   background-color: var(--colors-main);
-  color: #FFF;
+  color: #fff;
   padding: 20px;
 
   display: flex;
@@ -73,7 +68,7 @@ const MenuItem = styled.button`
   border: none;
   padding: 16px 16px 16px 45px;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(255, 255, 255, 0.15);
   color: white;
   font-size: 1.1em;
 
@@ -86,7 +81,7 @@ const MenuItem = styled.button`
   position: relative;
 
   &:hover {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
   svg {
