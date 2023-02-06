@@ -28,6 +28,7 @@ const Button = styled.button`
   border: none;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
   cursor: pointer;
+  z-index: 10;
 
   &:hover {
     background-color: rgb(44, 97, 176);
